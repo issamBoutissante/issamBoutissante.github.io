@@ -21,7 +21,7 @@ title: Issam Boutissante's Blog
 
 <style>
   .banner-container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
   }
