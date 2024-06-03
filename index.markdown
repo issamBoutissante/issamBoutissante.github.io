@@ -7,23 +7,25 @@ title: Issam Boutissante's Blog
   <img src="assets/banner.png" class="img-fluid banner-img" alt="Issam Boutissante's Banner">
 </div>
 
+<div class="content-container">
+
 ## Posts
 
-<div class="blog-posts">
-  {% for post in site.posts %}
-  <div class="post-preview">
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+  <div class="blog-posts">
+    {% for post in site.posts %}
+    <div class="post-preview">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+    </div>
+    <hr>
+    {% endfor %}
   </div>
-  <hr>
-  {% endfor %}
 </div>
 
 <style>
   .banner-container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
   }
 
   .banner-img {
@@ -32,10 +34,14 @@ title: Issam Boutissante's Blog
     object-fit: cover;
   }
 
-  .blog-posts {
+  .content-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+  }
+
+  .blog-posts {
+    margin-top: 20px;
   }
 
   .post-preview {
