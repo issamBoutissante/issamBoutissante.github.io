@@ -29,3 +29,5 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+disqus:
+  shortname: https-issamboutissante-github-io
