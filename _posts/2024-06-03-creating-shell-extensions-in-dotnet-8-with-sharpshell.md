@@ -1,4 +1,3 @@
-````markdown
 ---
 layout: post
 title: "Creating Shell Extensions in .NET 8 with SharpShell"
@@ -44,7 +43,6 @@ Modify the project file (`.csproj`) to target only Windows and include the neces
 
 </Project>
 ```
-````
 
 ## Step 3: Create a Context Menu Extension
 
@@ -262,7 +260,3 @@ Creating a shell extension in .NET 8 using SharpShell and the Microsoft Windows 
 extension code, and handling registration and unregistration. Experiment with different types of extensions to enhance your Windows Explorer experience!
 
 Feel free to reach out if you have any questions or run into issues. Happy coding!
-
-```
-
-```
