@@ -5,40 +5,56 @@ title: Issam Boutissante's Blog
 
 ![Issam Boutissante's Banner](assets/banner.png)
 
-## Welcome to my blog!
+<div class="blog-posts">
+  {% for post in site.posts %}
+  <div class="post-preview">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+    <p>{{ post.excerpt }}</p>
+    <a href="{{ post.url }}" class="read-more">Read More</a>
+  </div>
+  <hr>
+  {% endfor %}
+</div>
 
-I am Issam Boutissante, an IT Engineer with over 4 years of experience in .NET and Azure Cloud Development. I specialize in building desktop applications using WPF, WinForms, and Avalonia UI, covering both frontend and backend development.
+<style>
+  .blog-posts {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
 
-### About Me
+  .post-preview {
+    margin-bottom: 40px;
+  }
 
-- **Experience**:
+  .post-preview h2 {
+    font-size: 1.5em;
+  }
 
-  - **Visiativ**: Implemented SSO infrastructure, developed Windows shell extensions, migrated legacy add-ins.
-  - **Fiverr**: Migrated systems to Airtable, integrated APIs, developed WPF and .NET MAUI apps, created secure APIs.
-  - **Well2Wise**: Led project infrastructure, managed Azure resources, developed .NET MAUI and ASP.NET MVC apps.
+  .post-preview p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
 
-- **Skills**:
+  .post-meta {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
 
-  - **Languages**: C#, JavaScript, Python, C++, Java
-  - **SPA Frameworks**: Blazor WASM, Angular, React
-  - **Backend**: ASP.NET MVC, WEB API, Entity Framework, Microservices
-  - **Desktop**: WPF, WinForms, Avalonia UI, .NET MAUI
-  - **Databases**: MSSQL, Oracle, MySQL, MongoDB
-  - **Azure**: VMs, API Management, Event Grid, Key Vault, Azure Storage, B2C, SendGrid, Computer Vision, App Services, SQL Database
-  - **DevOps**: Git, GitHub, Azure DevOps, Docker, Kubernetes
+  .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
 
-- **Education**:
-
-  - **EMSI**: IT and Networks Engineering
-
-- **Certifications**:
-
-  - Machine Learning (IBM), Azure AD and B2C, Android App Development, DevOps and Agile Foundations
-
-- **Languages**:
-  - Tamazight and Arabic: Native
-  - French and English: Fluent
-
-I am dedicated to delivering high-quality, tailored solutions. Let's bring your project to life!
-
-Feel free to explore my blog for tips and insights on .NET development.
+  .read-more:hover {
+    background-color: #0056b3;
+  }
+</style>
