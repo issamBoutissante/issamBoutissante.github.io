@@ -3,6 +3,7 @@ layout: post
 title: "Creating Shell Extensions in .NET 8 with SharpShell"
 date: 2024-06-03 11:36:34 +0100
 categories: [.NET, SharpShell, Shell Extensions]
+comments: true
 ---
 
 In this blog, I'll walk you through creating a Windows shell extension using the SharpShell library in .NET 8. SharpShell is a popular library for creating shell extensions, but it was traditionally used with the .NET Framework. Thanks to the Microsoft Windows Compatibility Pack, it's now possible to create shell extensions in .NET 8.
