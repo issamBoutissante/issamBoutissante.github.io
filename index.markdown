@@ -3,13 +3,12 @@ layout: custom_home
 title: Issam Boutissante's Blog
 ---
 
-<div class="banner-container">
-  <img src="assets/banner.png" class="img-fluid banner-img" alt="Issam Boutissante's Banner">
-</div>
+<div class="container">
+  <div class="banner-container">
+    <img src="assets/banner.png" class="img-fluid banner-img" alt="Issam Boutissante's Banner">
+  </div>
 
-<div class="content-container">
-
-## Posts
+  <h2 class="mt-4">Posts</h2>
 
   <div class="blog-posts">
     {% for post in site.posts %}
@@ -24,20 +23,14 @@ title: Issam Boutissante's Blog
 
 <style>
   .banner-container {
-    max-width: 1000px;
     margin: 0 auto;
+    text-align: center;
   }
 
   .banner-img {
     max-height: 350px; /* Adjust this value as needed */
     width: 100%;
     object-fit: cover;
-  }
-
-  .content-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
   }
 
   .blog-posts {
