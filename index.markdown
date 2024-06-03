@@ -1,5 +1,5 @@
 ---
-layout: custom_home
+layout: home
 title: Issam Boutissante
 ---
 
