@@ -17,6 +17,25 @@
       .navbar .container-main {
         padding: 0; /* Remove padding from the navbar container */
       }
+      .footer-section {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #e5e5e5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .footer-section div {
+        flex: 1;
+        padding: 0 10px;
+      }
+      .footer-section a {
+        text-decoration: none;
+        color: #007bff;
+      }
+      .footer-section a:hover {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
@@ -52,10 +71,29 @@
     <div class="container-main mt-4">{{ content }}</div>
 
     <footer class="footer mt-auto py-3">
-      <div class="container-main">
-        <span class="text-muted"
-          >&copy; {{ site.time | date: "%Y" }} {{ site.title }}</span
-        >
+      <div class="container-main footer-section">
+        <div>
+          <h5>Issam Boutissante's Blog</h5>
+          <p>Issam Boutissante's Blog</p>
+          <a href="mailto:boutissante.issam.dev@gmail.com"
+            >boutissante.issam.dev@gmail.com</a
+          >
+        </div>
+        <div>
+          <a href="https://github.com/issamBoutissante" target="_blank"
+            >GitHub: issamBoutissante</a
+          ><br />
+          <a href="https://twitter.com/your_twitter_handle" target="_blank"
+            >Twitter: your_twitter_handle</a
+          >
+        </div>
+        <div>
+          <p>
+            Tips and concepts about .NET development by Issam Boutissante, an IT
+            Engineer with over 4 years of experience in .NET and Azure Cloud
+            Development.
+          </p>
+        </div>
       </div>
     </footer>
 
