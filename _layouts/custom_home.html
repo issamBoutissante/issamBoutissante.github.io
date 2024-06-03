@@ -9,26 +9,42 @@
     />
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
     <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
       .container-main {
         max-width: 1000px;
         margin: 0 auto;
-        padding: 0 10px; /* Adjust padding as needed */
+        padding: 0 20px; /* Adjust padding as needed */
       }
-      .navbar .container-main,
-      .footer .container-main {
-        padding: 0; /* Remove padding from the navbar and footer container */
+      .navbar {
+        margin-bottom: 20px;
+      }
+      .navbar .container-main {
+        padding: 0; /* Remove padding from the navbar container */
+      }
+      .banner-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .banner-img {
+        width: 100%;
+        height: auto;
+      }
+      .footer {
+        margin-top: 40px;
+        padding: 20px 0;
+        background: #f8f9fa;
+        border-top: 1px solid #e5e5e5;
       }
       .footer-section {
-        margin-top: 40px;
-        padding-top: 20px;
-        border-top: 1px solid #e5e5e5;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        text-align: center;
       }
       .footer-section div {
         flex: 1;
-        padding: 0 10px;
       }
       .footer-section a {
         text-decoration: none;
@@ -69,12 +85,22 @@
       </div>
     </nav>
 
-    <div class="container-main mt-4">{{ content }}</div>
+    <div class="container-main">
+      <div class="banner-container">
+        <img
+          src="{{ '/assets/banner.png' | relative_url }}"
+          class="banner-img"
+          alt="Issam Boutissante's Banner"
+        />
+      </div>
+
+      {{ content }}
+    </div>
 
     <footer class="footer mt-auto py-3">
       <div class="container-main footer-section">
         <div>
-          <h5>Issam Boutissante</h5>
+          <h5>Issam Boutissante's Blog</h5>
           <p>
             <a href="mailto:boutissante.issam.dev@gmail.com"
               >boutissante.issam.dev@gmail.com</a
