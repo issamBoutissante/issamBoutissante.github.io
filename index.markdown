@@ -1,6 +1,6 @@
 ---
 layout: custom_home
-title: Issam Boutissante's Blog
+title: Issam Boutissante
 ---
 
 <div class="banner-container container-main">
