@@ -1,0 +1,31 @@
+# Site settings
+title: Issam Boutissante's Blog
+email: boutissante.issam.dev@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Tips and concepts about .NET development by Issam Boutissante, an IT Engineer with over 4 years of experience in .NET and Azure Cloud Development.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://issamBoutissante.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: your_twitter_handle
+github_username: issamBoutissante
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
