@@ -3,7 +3,7 @@ layout: custom_home
 title: Issam Boutissante's Blog
 ---
 
-![Issam Boutissante's Banner](assets/banner.png)
+![Issam Boutissante's Banner](assets/banner.png){: .img-fluid .banner-img}
 
 ## Posts
 
@@ -18,6 +18,12 @@ title: Issam Boutissante's Blog
 </div>
 
 <style>
+  .banner-img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+
   .blog-posts {
     max-width: 800px;
     margin: 0 auto;
